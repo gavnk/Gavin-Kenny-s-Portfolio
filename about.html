@@ -27,6 +27,36 @@
             padding: 10px 20px;
             text-align: center;
         }
+        .home-button ,.about-button,.github-button,.youtube-button {
+            background-color: #f8f8f8;
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .home-button:hover, .nav-button:focus {
+            background-color: #101010;
+            color: #eeeeee;
+            border-color: #bbb;
+        }
+        .youtube-button:hover{
+            background-color: #f10c0c;
+            color: #ffffff;
+            border-color: #bbb;
+        }
+        .about-button:hover{
+            background-color: #fbf300;
+            color: #eeeeee;
+            border-color: #bbb;
+        }
+        .github-button:hover{
+            background-color: #09aaaa;
+            color: #eeeeee;
+            border-color: #bbb;
+        }
         section {
             margin: 20px 0;
             padding: 15px;
@@ -111,19 +141,20 @@
 <body>
     
         <header>
-            <h1>About Gavin Kenny</h1>
+            <h1>About Gavin</h1>
            
             <nav>
                 <ul>
-                    <li><a href="index.html" class="nav-button">Home</a></li>
-                    <li><a href="about.html" class="nav-button">About</a></li>
-                    <li><a href="https://github.com/gavnk" class="nav-button">Projects</a></li>
+                    <li><a href="index.html" class="home-button">Home</a></li>
+                    <li><a href="about.html" class="about-button">About</a></li>
+                    <li><a href="https://github.com/gavnk" class="github-button">Github</a></li>
+                    <li><a href="https://www.youtube.com/@gavinkenny369" class="github-button">Youtube</a></li>
                 </ul>
             </nav>
         </header>
         <div class="container">
         <section>
-            <h2>About</h2>
+            
             <div class="about-me">
                 <div class="about-image">
                     <img src="resources/Images/resume_photo.png" alt="Gavin Kenny">
