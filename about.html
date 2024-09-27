@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Gavin Kenny</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 70%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            text-align: justify;
+            text-justify: inter-word; /* Ensures spacing is handled between words for better readability */
+        }
+        ul {
+            list-style-type: disc; /* Default style, but ensures bullets are used if CSS resets are applied */
+            padding-left: 20px; /* Ensures indentation for bullets */
+        }
+        li {
+            margin-bottom: 10px; /* Adds space between list items */
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .nav-button {
+            background-color: #f8f8f8;
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav-button:hover, .nav-button:focus {
+            background-color: #e8e8e8;
+            color: #000;
+            border-color: #bbb;
+        }
+        .about-me {
+            display: flex;
+            align-items: top;
+            justify-content: space-between;
+        }
+        .about-text {
+            flex: 1;
+            padding-left: 20px; /* Spacing between image and text */
+        }
+        .about-image {
+            flex: 0 0 200px; /* Fix the width of the image container */
+        }
+        .about-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px; /* Optional: rounds the corners of the image */
+        }
+            @media (max-width: 768px) {
+            .container {
+                width: 95%; /* More width on smaller screens */
+                padding: 10px;
+            }
+            header, section {
+                padding: 5px 10px;
+            }
+            .about-me, .github-card {
+                flex-direction: column; /* Stacks children vertically */
+            }
+            .about-text,  .project, .github-info, .github-stats {
+                flex: 1 1 auto; /* Takes full width on small screens */
+            }
+            .about-image img {
+                width: 50%;
+                height: auto;
+                border-radius: 8px; /* Optional: rounds the corners of the image */
+            }
+        }
+    
+        
+    </style>
+</head>
+<body>
+    
+        <header>
+            <h1>About Gavin Kenny</h1>
+           
+            <nav>
+                <ul>
+                    <li><a href="test2.html" class="nav-button">Home</a></li>
+                    <li><a href="about.html" class="nav-button">About</a></li>
+                    <li><a href="https://github.com/gavnk" class="nav-button">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+        <section>
+            <h2>About</h2>
+            <div class="about-me">
+                <div class="about-image">
+                    <img src="resources/Images/resume_photo.png" alt="Gavin Kenny">
+                </div>
+                <div class="about-text">
+                 
+                        
+                    <p></p>
+                       B.Sc. Robotics & Intelligent Devices, NUI Maynooth</p>
+                
+                  
+                    <p> Contact: gvnknny@gmail.com
+                    </p>
+    
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <p></p>
+            <ul>
+                <li>C++, C, Python, Java, Verilog</li>
+                <li>ROS, MATLAB, OpenCV</li>
+                <li>Embedded Systems</li>
+                <li>Machine Learning</li>
+                <li>Computer Vision</li>
+            </ul>
+         
+        </section>
+        <section>
+            <h2>Professional Background</h2>
+            <p>I have 6 month industry experience at Microchip Technology where
+                 I worked as a Corporate Applications Engineer Intern as part of my BSc Degree. 
+                 I mostly worked with embedded systems, 8-bit Microcontrollers, Ethernet, sensors,
+                  communication protocols, datasheet analysis, and technical support via Salesforce.
+                   My internship project was an EMG controlled robotic hand,
+                    utilising some ethernet networking skill for communication between controllers 
+                    instead of SP1, USART or i2c.</p>
+
+            <p>I have previously lived and worked in Japan for
+             5 years as an English Teacher. 1 year in Osaka, and 4 years in Tokyo.</p>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <p>I taught myself mathematics to enter university.</p>
+            <p>I hold a B.Sc. in Robotics & Intelligent Devices.</p>
+            <p>Graduated top of my class with First Class Honours.
+                At University I consistently completed working projects each year of my studies. To give an overview,
+                 I built a ball and beam control system in my first year, an object detection computer vision system using
+                  a Raspberry Pi in my second year, in my third year during my internship I made an EMG controlled robotic hand.
+                  In my final year project involved two robotic arms both with 4DOF
+                   to perform collaborative tasks using depth cameras and ROS/ Moveit and Linux.
+             </p>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <ul></ul>
+                <li>Collaborative tasks of a dual arm system</li>
+                <li>UR5 Pick & Place</li>
+                <li>Object Recognition with Raspberry Pi</li>
+                <li>Ball & Beam</li>
+                <li>Micromouse</li>
+                <li>Thermal Camera</li>
+            </ul>
+        
+        </section>
+       
+        <footer style="text-align:center; padding:10px 0; background:#222; color:#fff;">
+            <p>Contact me at gvnknny@gmail.com</p>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
